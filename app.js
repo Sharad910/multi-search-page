@@ -20,14 +20,20 @@ input.addEventListener('input',function(e){
     }
     else if(input.value.toLowerCase().startsWith('docs ')){
         searchengine.innerText='Search Docs';
+        url= new URL('https://www.google.com/search');
+        url.searchParams.set('q',`${'site:docs.google.com '+`${input.value.slice(5)}`}`);
         icon.setAttribute('src','./imgs/docs.jpg');
     }
     else if(input.value.startsWith('slides ')){
         searchengine.innerText='Search Slides';
+        url= new URL('https://www.google.com/search');
+        url.searchParams.set('q',`${'site:docs.google.com/presentation '+`${input.value.slice(7)}`}`);
         icon.setAttribute('src','./imgs/slides.jpg');
     }
     else if(input.value.startsWith('sheets ')){
         searchengine.innerText='Search Sheets';
+        url= new URL('https://www.google.com/search');
+        url.searchParams.set('q',`${'site:docs.google.com/spreadsheets '+`${input.value.slice(7)}`}`);
         icon.setAttribute('src','./imgs/sheets.png');
     }
     else {
