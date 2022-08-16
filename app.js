@@ -47,7 +47,7 @@ input.addEventListener('input',function(e){
 
 button.addEventListener('click',function(e){
     e.preventDefault();
-    if(input.value===''){
+    if(input.value.trim()===''){
         window.alert('Error! SearchBox is Empty')
     }
     else{
