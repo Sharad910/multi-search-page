@@ -43,7 +43,7 @@ button:hover{
     max-width: 65px;
 }
 img{
-    display: inline;
+    display:inline;
     height: 20px;
     width: 20px;
 }
@@ -71,9 +71,15 @@ img{
     }
     input{
         margin-left: 0;
-        width: 100px;
+        width: 150px;
     }
     #outer{
         width: 360px;
+    }
+    img{
+        display: block;
+        height: 15px;
+        width: 15px;
+        margin: 0;
     }
 }
