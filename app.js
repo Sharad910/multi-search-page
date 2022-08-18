@@ -21,12 +21,12 @@ input.addEventListener('input',function(e){
         url.searchParams.set('q',`${'site:docs.google.com '+`${input.value.slice(5)}`}`);
         icon.setAttribute('src','./imgs/docs.jpg');
     }
-    else if(input.value.startsWith('slides ')){
+    else if(input.value.toLowerCase().startsWith('slides ')){
         url= new URL('https://www.google.com/search');
         url.searchParams.set('q',`${'site:docs.google.com/presentation '+`${input.value.slice(7)}`}`);
         icon.setAttribute('src','./imgs/slides.jpg');
     }
-    else if(input.value.startsWith('sheets ')){
+    else if(input.value.toLowerCase().startsWith('sheets ')){
         url= new URL('https://www.google.com/search');
         url.searchParams.set('q',`${'site:docs.google.com/spreadsheets '+`${input.value.slice(7)}`}`);
         icon.setAttribute('src','./imgs/sheets.png');
